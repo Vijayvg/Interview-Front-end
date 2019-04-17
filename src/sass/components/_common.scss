@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  font-family: $ff-normal;
+}
+
+a {
+  text-decoration: none;
+  color: $brand-color1;
+  &:hover {
+    color: $brand-color2;
+  }
+}
+
+.btn {
+  background: $brand-color1;
+  color: $color-white;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  border: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 25px;
+  line-height: 1.3;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background: lighten($brand-color1, 13%);
+    color: $color-white;
+  }
+}
+
+.img {
+  position: relative;
+}
+
+.img--center {
+  background-position: center;
+}
+.img--no_repeat {
+  background-repeat: no-repeat;
+}
+
+.img--full {
+  background-size: 100%;
+}
+
+.img__block {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.section__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/*FADEUP EFFECT */
+
+.fadeup {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(60px);
+}
+.dom__ready .inview .fadeup {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+  //transition: transform 2s cubic-bezier(.6,.2,.1,1) 0s,opacity 2s cubic-bezier(.6,.2,.1,1) 0s;
+  transition: transform 0.75s ease 0s, opacity 0.75s ease 0s,
+    background 0.35s ease 0s;
+}
+
+/*FORM*/
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    margin: 0 -10px;
+  }
+}
+
+.form__row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.form__field {
+  position: relative;
+  padding: 0 10px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin: 10px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.form__control {
+  padding: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s ease;
+  color: $color-black;
+  &:focus,
+  &:active {
+    outline: none;
+    background: #ececec;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+  }
+}

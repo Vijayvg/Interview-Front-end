@@ -1,0 +1,37 @@
+{% set testimonials = [
+    { 
+        text : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        name : "Client Name",
+        designation : "Postion, ORG"
+    }, 
+    { 
+        text : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+        name : "Client Name",
+        designation : "Postion, ORG"
+    }, 
+    { 
+        text : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled .",
+        name : "Client Name",
+        designation : "Postion, ORG"
+    }
+] %}
+
+
+{% for testimonial in testimonials %}
+    <div class="testimonial__block  fadeup">
+        <div class="testimonial__body">
+            <div class="testimonial__inner">{{ testimonial.text }}</div>
+        </div>
+        <div class="testimonial__footer">
+            <div class="client">
+                <div class="client__img client__img--small">
+                    <div class="img img--center img--no_repeat p-100" style="background-image: url(images/avatar.png)"></div>
+                </div>
+                <div class="client__info">
+                    <h3 class="client__name">{{ testimonial.name }}</h3>
+                    <span class="client__designation">{{ testimonial.designation }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

@@ -1,0 +1,16 @@
+{% set links = [
+    { img : "banner_icon1.png", text: "Service Name"}, 
+    { img: "banner_icon2.png", text: "Service Name"}, 
+    { img : "banner_icon3.png", text: "Service Name"}
+] %}
+
+<div class="banner__links">
+    {% for link in links %}
+        <a class="banner__link  fadeup">
+            <div class="banner__icon">
+                <div class="banner__icon-img img img--center img--no_repeat p-80" style="background-image: url(images/{{ link.img }})"></div>
+            </div>
+            <span class="banner__text">{{ link.text }}</span>
+        </a>
+    {% endfor %}
+</div>

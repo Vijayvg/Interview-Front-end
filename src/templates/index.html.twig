@@ -2,11 +2,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Axelerant: Interview Frontend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 </head>
 <body>
-    <h3>Welcome</h3>
-    {% include "_button.html.twig" %}
+    <main class="page home--page"> 
+        
+        {% include "./sections/header.html.twig" %}
+        
+        {% include "./sections/banner.html.twig" %}
+        
+        {% include "./sections/about.html.twig" %}
+        
+        {% include "./sections/testimonial.html.twig" %}
+        
+        {% include "./sections/contact.html.twig" %}
+        
+        {% include "./sections/footer.html.twig" %}
+         
+        
+    </main>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script src="main.js"></script>
 </body>

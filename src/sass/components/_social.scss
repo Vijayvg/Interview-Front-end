@@ -1,0 +1,45 @@
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.social__item {
+  padding: 0 2px;
+}
+
+.social_text {
+  padding: 0 15px;
+}
+
+.social__link {
+  width: 24px;
+  height: 24px;
+  display: block;
+  background: url(../images/sprite_social.png) no-repeat;
+  background-size: auto 16px;
+  background-position-y: center;
+  transition: 0.4s ease;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.social__link--fb {
+  background-position-x: 4px;
+}
+.social__link--in {
+  background-position-x: -20px;
+}
+.social__link--twitter {
+  background-position-x: -40px;
+}
+.social__link--mail {
+  background-position-x: -60px;
+}

@@ -1,0 +1,28 @@
+/*CLIENT*/
+
+.client {
+  display: inline-block;
+}
+.client__img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.client__img--small {
+  width: 60px;
+}
+.client__info {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.client__name {
+  margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.25;
+  color: #4d4845;
+}
+.client__designation {
+  margin: 0;
+  color: #908481;
+}

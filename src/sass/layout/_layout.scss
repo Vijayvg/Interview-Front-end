@@ -1,0 +1,74 @@
+/*SCROLLBAR */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+  @include fluid-type(320px, 1024px, 12px, 16px);
+}
+
+body {
+  font-size: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  font-family: $ff-normal;
+  line-height: 1.75;
+  color: $color-black;
+  @media screen and (max-width: 991px) {
+    padding-top: 80px;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and (max-width: 1199px) {
+    max-width: 90%;
+  }
+
+  @media screen and (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+
+.page {
+  width: 100%;
+  position: relative;
+}
+
+.home-section {
+  padding: 60px 0;
+  position: relative;
+  @media screen and (max-width: 991px) {
+    padding: 40px 0;
+  }
+}
+
+.section__title {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.25;
+  @include fluid-type(320px, 1024px, 25px, 30px);
+}

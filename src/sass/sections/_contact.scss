@@ -1,0 +1,20 @@
+/*CONTACT*/
+
+.contact {
+  color: $color-white;
+}
+
+.contact__title {
+  margin-bottom: 0.25em;
+}
+.contact__text {
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin-top: 0;
+  @include fluid-type(320px, 1024px, 15px, 22px);
+}
+
+.contact__form {
+  max-width: 900px;
+  margin: 0 auto;
+}

@@ -1,0 +1,27 @@
+/*FOOTER*/
+
+.footer {
+  background: $brand-color2;
+  color: #afa5a3;
+  padding: 40px 0;
+  overflow: hidden;
+  font-size: 90%;
+}
+
+.footer__inner {
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 580px) {
+  .footer {
+    padding: 20px 0;
+  }
+  .footer__left,
+  .footer__right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+  }
+}

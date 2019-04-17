@@ -1,11 +1,19 @@
 @import 'config/**/*.scss';
+@import 'base/variables';
+@import 'helper/helpers';
+@import 'layout/layout';
 
-html {
-  height: 100%;
-  font-size: 16px;
-}
+@import 'components/common';
 
-body {
-  font-size: 100%;
-  display: flex;
-}
+@import 'sections/header';
+@import 'sections/banner';
+@import 'sections/about';
+@import 'sections/testimonial';
+@import 'sections/contact';
+@import 'sections/footer';
+
+@import 'components/nav';
+@import 'components/client';
+@import 'components/social';
+
+@import 'vendor/slick';

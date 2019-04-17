@@ -1,0 +1,21 @@
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="toggle__btn nav__toggle">
+                <div class="toggle__line"></div>
+                <div class="toggle__line"></div>
+                <div class="toggle__line"></div>
+            </div>
+            <div class="header__left">
+                <a href="#" class="logo"><img src="./images/logo.png" alt=""></a>
+            </div>
+
+            {% include "../components/navbar.html.twig" %}
+
+            <div class="header__right">
+                {% include "../components/button-link.html.twig" with { text: 'Get In Touch', class : 'header__btn', link : '#'} %}
+            </div>
+        </div>
+    </div>
+</header>
+

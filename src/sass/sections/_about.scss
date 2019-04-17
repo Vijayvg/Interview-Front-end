@@ -1,0 +1,23 @@
+/*ABOUT*/
+
+.about__block {
+  justify-content: space-between;
+}
+
+.about__content {
+  width: 50%;
+}
+
+.about__img {
+  width: 47%;
+}
+
+@media screen and (max-width: 1024px) {
+  .about__content {
+    margin-bottom: 30px;
+  }
+  .about__content,
+  .about__img {
+    width: 100%;
+  }
+}
